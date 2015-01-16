@@ -1,0 +1,448 @@
+.rs-control-group{
+	padding-left: 25px;
+}
+
+#closechangepasswordlinkid{
+    color: #6677cc;
+    text-align: right;
+    padding-right: 13px;
+    position: relative;
+    float: right;
+    bottom: 12px;
+    cursor: pointer;
+    font-size: 11px;
+}
+
+#changethepasswordbtn{
+    border-radius: 17px;
+    border: 3px solid grey;
+    position: relative;
+    top: 4px;	
+    margin-bottom: 15px;
+    margin-top: 10px;
+    margin-left: 25px;
+}
+
+.passchangelabel{
+    display: block;
+    width: 230px;
+    margin-top: 20px;
+    font-size: 11px;
+}
+
+.rs-input-large{
+	padding-left: 0.5em;
+}
+
+.wrongserver{
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-size: 14px;
+    background: white;
+    border-collapse: collapse;
+    text-align: left;
+    margin: 20px;
+}
+
+.filterspan{
+	position:relative;
+	left:598px;
+	bottom:175px;
+}
+
+.filterbutton{
+	position: relative;
+	bottom: 66px;
+	left: 10px;
+	font-size: 15;
+	font-family: arial;
+	background-color: #FFF380;
+	border-radius: 16px;
+	border: 3px solid grey;
+	width: 75px;
+	cursor:pointer;
+}
+
+.filterbuttondisabled{
+	position: absolute;
+	bottom: 66px;
+	right: -86px;
+	font-size: 15;
+	font-family: arial;
+	background-color: #FFF380;
+	border-radius: 16px;
+	border: 3px solid grey;
+	width: 75px;
+	cursor:pointer;
+}
+
+.opacityclass{
+	opacity:0.4;
+	filter:alpha(opacity=40);
+}
+
+#progressid{
+	width:90px;
+	height:90px;
+	position:fixed;
+	left:47%;
+	bottom:48%;
+	z-index:100;
+	background:transparent;
+}
+
+.deploytable{
+font-family: "Lucida Sans Unicode", "Lucida Grande", "Sans-Serif";
+font-size: 14px;
+background: white;
+width: 480px;
+border-collapse: collapse;
+text-align: left;
+margin: 20px;
+}
+.deploytable th {
+font-size: 16px;
+font-weight: normal;
+color: #039;
+border-bottom: 3px solid #6678B1;
+padding: 10px 8px;
+}
+
+.deploytable td{
+border-bottom: 1px solid #CCC;
+color: #000000;
+padding: 11px 10px;
+min-width: 330px;
+text-align: left;
+}
+
+.deploytable ul{
+list-style-type:none;
+}
+
+.deploytable ul li{
+padding-top: 10px;
+}
+
+.deploytable ul li input{
+height: 15px;
+width: 10px;
+margin: 3px 2px 1px -50px;
+}
+
+.deploytable .deploybutton{	
+	background-size:30px 30px;
+	background-color:#5FAAFA;
+	border-radius: 16px;
+    border: 4px solid grey;
+    padding: 7px;
+    position: relative;
+    right: 170px;
+    width: 158px;
+    cursor:pointer;
+}
+
+/*
+.detailsbutton{
+	background:url("../images/magnifyingglass.jpeg")no-repeat scroll 0 0 / 24px auto #5FAAFA;
+	background-color:#5FAAFA;
+	border-radius: 5px;
+    border: 3px solid grey;
+    padding: 2px;
+    position: relative;
+    left: 67px;
+    width: 30px;
+    height: 30px;
+    cursor:pointer;
+    
+}
+*/
+
+.detailsimage{
+    border-color: #CCCCCC;
+    border-radius: 5px 5px 5px 5px;
+    cursor: pointer;
+    border-style: solid;
+    left: 65px;
+    padding: 2px;
+    position: relative;
+    width: 25px;    
+}
+
+.deploytable .revertbutton{
+	background-color:#CC6633;
+	border-radius: 16px;
+    border: 4px solid grey;
+    padding: 7px;
+    position: relative;
+    right: 170px;
+    width: 158px;
+    cursor:pointer;
+}
+
+.deploytable .draftstatuscol{
+	position:relative;
+	text-indent: -33px;
+}
+
+.deploytable .returnmessage{
+	min-width:500px;
+}
+
+.deploytable .lastbuildstatusimg{
+	height:30px;
+	width:30px;
+	position:relative;
+	right:42px;
+}
+
+.deploytable .cannotdeploymessage{
+	position: relative;
+    right: 787px;
+    line-height:60%;
+    margin-top:8px;
+}
+
+.deploytable .successmessage{
+	color:black;
+}
+
+.deploytable .failuremessage{
+	color:red;
+}
+
+.deploytable .cannotdeploymessage{
+	color:red;
+}
+
+#top{
+	white-space: nowrap;
+}
+
+#clearbutton{
+	background-color:#FFF380;
+	border-radius: 16px;
+    border: 4px solid grey;
+    height:37px;
+    padding: 7px;
+    position: relative;
+    left:20px;
+    width:135px;
+    cursor:pointer;
+}
+
+#fullpageloadbutton{
+	background-color:#FFF380;
+	border-radius: 16px;
+    border: 4px solid grey;
+    height:37px;
+    padding: 7px;
+    position: relative;
+    left:183px;
+    bottom:36px;
+    width:135px;
+    cursor:pointer;
+}
+
+.meter-wrap{
+    position: relative;
+}
+
+.meter-wrap, .meter-value, .meter-text {
+    /* The width and height of your image */
+    width: 155px; height: 30px;
+}
+
+.meter-wrap, .meter-value {
+    background: #bdbdbd url("../images/meter-outline.png") top left no-repeat;
+}
+
+.meter-text {
+    position: absolute;
+    top:0; left:0;
+
+    padding-top: 5px;
+
+    color: #fff;
+    text-align: center;
+    width: 100%;
+}
+
+#mytable{
+	position:relative;
+}
+
+.deploytable .deploywarcol{
+    margin: -24px 10px 5px -50px;
+}
+
+.deploytable .detailscol{
+	position:relative;
+	text-indent:-60px;	
+}
+
+.deploytable #deployedwarth{
+	position:relative;
+	text-indent:-10px;
+}
+
+.deploytable #detailsth{
+	position:relative;
+	text-indent:-5px;	
+}
+
+.deploytable #draftstatusth{
+	position: relative;
+    text-indent: -90px;
+}
+
+.deploytable #progimg {
+	position:relative;
+	left: 600px;
+	bottom: 240px;
+	display: none;
+}
+
+.deploytable #lastrow #lastcol{
+	border-bottom: 0px;
+}
+
+.deploytable .draftstatusoff{
+	position:relative;
+	right: 7px;
+}
+
+.deploytable .draftstatuson{
+	position:relative;
+	right: 7px;
+}
+
+.deploytable .internalicon{
+	width:15px;
+	height:15px;
+	position:relative;
+	bottom:0px;
+	right:0px;
+	float:right;
+}
+
+.reviewicon{
+    width: 23px;
+    height: 23px;
+    position: relative;
+    bottom: 25px;
+    right: -25px;
+    float: right;	    
+}
+
+.deploytable .deployedbooknames{
+	left:-30px;
+    position:relative;
+    margin:-19px 5px 5px 0px;
+}
+
+.deployedbooknamesreviewer{
+	left:-30px;
+    position:relative;
+    margin:-19px 5px 5px 0px;
+    color:#A2A2A2;	
+}
+
+.details{
+    background-color: #FFFFFF;
+    background-image: none;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px 5px 5px 5px;
+    bottom: 80px !important;
+    color: #222222;
+    font-family: arial;
+    left: 50%;
+    margin-left: -450px;
+    margin-top: -270px;
+    position: fixed;
+    top: 50%;
+    z-index: 100 !important;
+}
+
+#cloudimageid{
+	width:135px;
+	position:relative;
+	left:8px;
+	top:4px;
+}
+
+.detailstableclass{
+	border-collapse: collapse;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", "Sans-Serif";
+    background: white;	
+    text-align: left;
+    margin: 20px;
+    position: relative;
+    /*left: .5%;*/
+    width: 900px;
+}
+
+.detailscol{ 
+    font-size: 12px; 
+    font-weight: normal;
+    padding-left:5px;   
+}
+
+.detailsth{
+    font-size: 16px;
+    font-weight: bold;	
+    color: #039;
+    border-bottom: 3px solid #6678B1;
+    padding: 10px 8px;    
+}
+
+#closelinkid{
+    color: #6677cc;
+    text-align: right;
+    position: relative;
+    float: right;
+    right: 2%;
+    top: 10px;
+    cursor: pointer;
+}
+
+.jenkinsresultimg{
+	cursor:pointer;
+}
+
+#freezeuiformid{
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    position:relative;
+    left:320px;
+    bottom:15px;	
+}
+
+#freezeuibutton{
+	background-color:#FFF380;
+	border-radius: 16px;
+    border: 4px solid grey;
+    height:37px;
+    padding: 7px;
+    position: relative;
+    left:25px;
+    bottom:15px;
+    width:135px;
+    cursor:pointer;	
+}
+
+#freezemessageid{
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+	color: #FF2211;
+    font-size: 18px;
+    text-align: center;
+}
+
+#changepasswordbtn{
+	background-color:#5FAAFA;
+	border-radius: 16px;
+    border: 4px solid grey;
+    padding: 7px;
+    cursor:pointer;	
+    position: relative;
+    bottom: 40px;
+    left: 17px;
+}

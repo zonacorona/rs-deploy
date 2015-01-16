@@ -1,0 +1,170 @@
+
+body{
+	color:#111;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", "Sans-Serif";
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+.tableheaderclass{
+    background:#B7C5D4;/*for non-css3 browsers*/
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#334455', endColorstr='#AABBCD'); /* for IE */
+    background: -webkit-gradient(linear, left top, left bottom, from(#334455), to(#AABBCD));
+    background: -moz-linear-gradient(top,  #334455,  #AABBCD); /* for firefox 3.6+ */
+    text-align:left;
+    font-weight:bold;
+    /*border: solid #888AAA 1px;*/
+    height:30px;
+}
+
+#deploymenthistorytableid{
+	border-collapse:separate;
+	border-spacing:1px;
+	background-color:#888AAA;	
+	-moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    margin-left:auto;
+    margin-right:auto;
+    width:1250px;
+}
+
+.deploymenthistortableoddrow{
+	background-color:#F0F0F0;
+	color:#778899;	
+}
+
+.deploymenthistortableevenrow{
+	background-color:#B7C5D4;	
+	color:#445566;
+}
+
+#clicknextid{
+	float:right;
+	position:relative;
+	right:10px;
+	font-size:13px;
+	color:#1144C1;
+	cursor:pointer;
+}
+
+#top{
+	white-space: nowrap;
+}
+
+#clickpreviousid{
+	float:right;
+	position:relative;
+	right:45px;
+	font-size:13px;
+	color:#1144C1;
+	cursor:pointer;	
+}
+
+#tabletitleid{
+	text-align: center;
+	color:#1144C1;
+}
+
+#previousnextbuttonid{
+	position: relative;
+    float: right;
+}
+
+
+.failreasonthclass{
+	width:290px;
+}
+
+#lastrowid{
+    height:30px;	
+}
+
+.filterspan{
+	position:relative;
+	left:142px;
+	bottom:17px;
+}
+
+.filterbutton{
+	position: relative;
+	bottom: 66px;
+	left: 5px;
+	font-size: 15;
+	font-family: arial;
+	background-color: #CCDDEE;
+	border-radius: 16px;
+	border: 3px solid grey;
+	width: 75px;
+	cursor:pointer;
+}
+
+#clickprevioustopid{
+	position:relative;
+	float:right;
+	cursor:pointer;
+	right:45px;
+}
+
+#clickprevioustopjsid{
+	position:relative;
+	float:right;
+	cursor:pointer;
+	right:45px;
+	/*bottom:29px;*/
+}
+
+#clicknexttopid{
+	position:relative;
+	float:right;
+	cursor:pointer;
+	right: 10px;
+}
+
+#clicknexttopjsid{
+	position:relative;
+	float:right;
+	cursor:pointer;
+}
+
+#previousnextbuttontopid{
+	position:relative;
+	bottom:8px;
+}
+
+#doctoolsimgid{
+	position:relative;
+	left:107px;
+}
+
+#filterformid{
+	position:relative;
+	left:600px;
+	bottom:88px;
+}
+
+#top{
+	position:relative;
+	top:35px;
+}
+
+.progressindicatorclass{
+	white-space:nowrap;
+}
+
+.progressimgclass{
+	position:relative;
+	top:1px;
+	left:3px;
+}
+
+#progressid {
+	width: 90px;
+	height: 90px;
+	position: fixed;
+	left: 47%;
+	bottom: 48%;
+	z-index: 900;
+	background: transparent;
+}
+

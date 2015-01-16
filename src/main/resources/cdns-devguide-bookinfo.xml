@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<products xmlns:xlink="http://www.w3.org/1999/xlink">
+   <latestpdf>cdns-devguide-latest.pdf</latestpdf>
+   <pdfoutname>cdns-devguide-20140701.pdf</pdfoutname>
+   <docname>Cloud DNS Developer Guide</docname>
+   <productname>Cloud DNS</productname>
+   <webappname>cdns-devguide</webappname>
+   <pominfo>
+      <groupid>com.rackspace.cloud.dns.api</groupid>
+      <artifactid>dns-docs</artifactid>
+      <version>1.0.17-SNAPSHOT</version>
+      <pomname>Cloud DNS API Docs</pomname>
+   </pominfo>
+   <product>
+      <id>cdns-v1.0</id>
+      <types>
+         <type>
+            <id>100</id>
+            <displayname>API Developer Guide</displayname>
+            <url>/cdns/api/v1.0/cdns-devguide/content/overview.html</url>
+            <sequence>2</sequence>
+         </type>
+      </types>
+   </product>
+   <emails>
+      <email>
+         <name>CDT Publication Events</name>
+         <to>cdt-publication-events@lists.rackspace.com</to>
+         <from>clouddoctoolsteam@lists.rackspace.com</from>
+      </email>
+   </emails>
+</products>

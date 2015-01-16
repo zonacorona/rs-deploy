@@ -1,0 +1,427 @@
+.deployadminheaderclass {
+	background: #B7C5D4; /*for non-css3 browsers*/
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#334455',
+		endColorstr='#AABBCD' ); /* for IE */
+	background: -webkit-gradient(linear, left top, left bottom, from(#334455),
+		to(#AABBCD) );
+	background: -moz-linear-gradient(top, #334455, #AABBCD);
+	/* for firefox 3.6+ */
+	text-align: left;
+	font-weight: bold;
+	/*border: solid #888AAA 1px;*/
+	height: 30px;
+}
+
+.groupnameheaderclass {
+	width: 500px;
+}
+
+.deployadmincolclass {
+	padding-left: 10px;
+}
+
+.deployadmineditbutton {
+	background-size: 30px 30px;
+	background-color: #CCDDEE;
+	border-radius: 16px;
+	border: 4px solid grey;
+	padding: 7px;
+	position: relative;
+	width: 100px;
+	cursor: pointer;
+	height: 35px;
+	bottom: 5px;
+	left: 170px;
+}
+
+#progressid {
+	width: 90px;
+	height: 90px;
+	position: fixed;
+	left: 47%;
+	bottom: 48%;
+	z-index: 900;
+	background: transparent;
+}
+
+#editgroupnamesformid {
+	position: fixed;
+	padding: 20px;
+	bottom: 15%;
+	left: 20%;
+	right: 20%;
+	z-index: 101;
+	background: #FFFFFF;
+	border-style: solid;
+	border-color: #D1D0C0;
+	display: inline-block;
+	margin: 0px auto 10px auto;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+
+#createuserformid {
+	position: fixed;
+	padding: 20px;
+	bottom: 40%;
+	left: 20%;
+	right: 20%;
+	z-index: 101;
+	background: #FFFFFF;
+	border-style: solid;
+	border-color: #F12721;
+	display: inline-block;
+	margin: 0px auto 10px auto;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+
+#closelinkid {
+	color: #6677cc;
+	text-align: right;
+	position: relative;
+	float: right;
+	right: 0%;
+	bottom: 30px;
+	cursor: pointer;
+}
+
+#closedeletegroupsid{
+	color: #6677cc;
+	text-align: right;
+	position: relative;
+	float: right;
+	right: 0%;
+	bottom: 30px;
+	cursor: pointer;	
+}
+
+#closenewgrouptextid{
+	color: #6677cc;
+	text-align: right;
+	position: relative;
+	float: right;
+	right: 0%;
+	bottom: 20px;
+	cursor: pointer;
+	font-size: 13px;	
+}
+
+#usergroupmembershipid {
+	font-size: 20px;
+	font-weight: bold;
+	color: #039;
+	border-bottom: 3px solid #6678B1;
+	padding: 10px 8px;
+}
+
+#userstatusid {
+	font-size: 20px;
+	font-weight: bold;
+	color: #039
+}
+
+#statusid {
+	font-size: 20px;
+	font-weight: bold;
+	color: #039;
+	border-bottom: 3px solid #6678B1;
+	padding: 10px 8px;
+}
+
+.statusclass {
+	
+}
+
+#updatebuttonid {
+	background-size: 30px 30px;
+	background-color: #5FAAFA;
+	border-radius: 16px;
+	border: 4px solid grey;
+	padding: 7px;
+	position: relative;
+	left: 20px;
+	width: 158px;
+	cursor: pointer;
+}
+
+#cancelbuttonid {
+	background-size: 30px 30px;
+	background-color: #5FAAFA;
+	border-radius: 16px;
+	border: 4px solid grey;
+	padding: 7px;
+	position: relative;
+	left: 40px;
+	width: 158px;
+	cursor: pointer;
+}
+
+#createnewusertopbtnid {
+	position: relative;
+	bottom: 10px;
+	left: 40px;
+	font-size: 15;
+	font-family: arial;
+	background-color: #AA8899;
+	border-radius: 16px;
+	border: 3px solid grey;
+	cursor: pointer;
+}
+
+#creategroupbtnid{
+	position: relative;
+	font-size: 15;
+	font-family: arial;
+	background-color: #AA8899;
+	border-radius: 16px;
+	border: 3px solid grey;
+	cursor: pointer;	
+}
+
+#deletegroupbtnid{
+	position: relative;
+	font-size: 15;
+	font-family: arial;
+	background-color: #AA8899;
+	border-radius: 16px;
+	border: 3px solid grey;
+	cursor: pointer;	
+}
+
+.newuserform {
+	color: #778899;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", "Sans-Serif";
+	font-size: 13px;
+	line-height: 1.4;
+}
+
+.creategroupform{
+	color: #778899;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", "Sans-Serif";
+	font-size: 13px;
+	line-height: 1.4;	
+}
+
+#creategroupformid {
+	position: fixed;
+	padding: 20px;
+	bottom: 40%;
+	left: 20%;
+	right: 20%;
+	z-index: 101;
+	background: #FFFFFF;
+	border-style: solid;
+	border-color: #F12721;
+	display: inline-block;
+	margin: 0px auto 10px auto;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+
+#deletegroupsid {
+	position: fixed;
+	padding: 20px;
+	bottom: 15%;
+	left: 20%;
+	right: 20%;
+	z-index: 101;
+	background: #FFFFFF;
+	border-style: solid;
+	border-color: #F12721;
+	display: inline-block;
+	margin: 0px auto 10px auto;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+
+#closetextid {
+	color: #6677cc;
+	float: right;
+	cursor: pointer;
+	font-size: 13px;
+}
+
+#deletegroupsbtnid{
+	background-size: 30px 30px;
+	background-color: #FFFF66;
+	border-radius: 16px;
+	border: 4px solid grey;
+	padding: 7px;
+	position: relative;
+	width: 100px;
+	cursor: pointer;
+	height: 35px;
+	bottom: 5px;	
+}
+
+#canceldeletegroupsid {
+	background-size: 30px 30px;
+	background-color: #FFFF66;
+	border-radius: 16px;
+	border: 4px solid grey;
+	padding: 7px;
+	position: relative;
+	width: 100px;
+	cursor: pointer;
+	height: 35px;
+	bottom: 5px;
+	left: 20px;
+}
+
+#createnewuserbottombtnid {
+	background-size: 30px 30px;
+	background-color: #FFFF66;
+	border-radius: 16px;
+	border: 4px solid grey;
+	padding: 7px;
+	position: relative;
+	width: 100px;
+	cursor: pointer;
+	height: 35px;
+	bottom: 5px;
+}
+
+#createnewgroupid{
+	background-size: 30px 30px;
+	background-color: #FFFF66;
+	border-radius: 16px;
+	border: 4px solid grey;
+	padding: 7px;
+	position: relative;
+	width: 100px;
+	cursor: pointer;
+	height: 35px;
+	bottom: 5px;	
+}
+
+#cancelcreatenewuserbtnid {
+	background-size: 30px 30px;
+	background-color: #FFFF66;
+	border-radius: 16px;
+	border: 4px solid grey;
+	padding: 7px;
+	position: relative;
+	width: 100px;
+	cursor: pointer;
+	height: 35px;
+	bottom: 5px;
+	left: 20px;
+}
+
+#cancelcreategroupbtnid {
+	background-size: 30px 30px;
+	background-color: #FFFF66;
+	border-radius: 16px;
+	border: 4px solid grey;
+	padding: 7px;
+	position: relative;
+	width: 100px;
+	cursor: pointer;
+	height: 35px;
+	bottom: 5px;
+	left: 20px;
+}
+
+.createformclass {
+	padding-bottom: 15px;
+	color: #778899;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", "Sans-Serif";
+	font-size: 13px;
+	line-height: 1.4;
+}
+
+#createnewusertitleid {
+	font-size: 20px;
+	font-weight: bold;
+	color: #039;
+	border-bottom: 3px solid #6678B1;
+	padding: 10px 8px;
+}
+
+#groupstitleid{
+	font-size: 20px;
+	font-weight: bold;
+	color: #039;
+	border-bottom: 3px solid #6678B1;
+	padding: 10px 8px;	
+}
+
+#createnewgrouptitleid {
+	font-size: 20px;
+	font-weight: bold;
+	color: #039;
+	border-bottom: 3px solid #6678B1;
+	padding: 10px 8px;
+}
+
+.asteriskclass {
+	color: red;
+	position:relative;
+	left:10px;
+}
+
+#ldapnameformasteriskid{
+	left:3px;
+}
+
+#emailformasteriskid{
+    left:40px;
+}
+
+#memberscolumnid {
+	-webkit-column-count: 2;
+	-webkit-column-gap: 10px;
+	-moz-column-count: 2;
+	-moz-column-gap: 10px;
+}
+
+#groupscolumnid{
+	-webkit-column-count: 2;
+	-webkit-column-gap: 10px;
+	-moz-column-count: 2;
+	-moz-column-gap: 10px;	
+}
+
+
+#emailformid{
+	position: relative;
+	left: 40px;
+}
+
+#ldapnameformid{
+	position: relative;
+	left: 3px;
+}
+
+#lnameformid{
+	position: relative;
+	left: 10px;
+}
+
+#fnameformid{
+	position: relative;
+	left: 8px;
+}
+
+#spanuserid{
+	position:relative;
+	top: 12px;
+}
+
+#groupnamestextid{
+	position:relative;
+	top:10px;
+}
+
+#grouprelatedbuttonsid{
+	position:relative;
+	left:112px;
+	bottom:8px;
+}
+
+#updategroupsclosetext{
+    float:right;	
+    cursor:pointer;
+}
+

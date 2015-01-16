@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+   	   xmlns:context="http://www.springframework.org/schema/context"
+   	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+   	   xmlns:mvc="http://www.springframework.org/schema/mvc" 
+   	   xmlns:aop="http://www.springframework.org/schema/aop" 
+   	   xmlns:tx="http://www.springframework.org/schema/tx" 
+   	   xmlns:jee="http://www.springframework.org/schema/jee" 
+   	   xsi:schemaLocation="
+   			http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd 
+   			http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd 
+   			http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd 
+   			http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd 
+   			http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd 
+   			http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee.xsd">
+    
+    <jee:jndi-lookup id="dataSource" jndi-name="java:comp/env/jdbc/docsdb" />
+    
+
+    <!--  
+    <mvc:annotation-driven/>
+    -->
+    <mvc:resources mapping="/resources/**" location="/WEB-INF/resources/"/>
+    <!-- Register Annotation-based Post Processing Beans -->
+    <context:annotation-config />  
+    <!-- Scan context package for any eligible annotation configured beans -->
+	<context:component-scan base-package="com.rackspace.cloud.api.controller" />
+    
+    <bean id="deployjobDao" class="com.rackspace.cloud.api.dao.impl.DeployJobDaoImpl"/>
+    <bean id="freezeDao" class="com.rackspace.cloud.api.dao.impl.FreezeDaoImpl"/>    
+    <bean id="groupsDao" class="com.rackspace.cloud.api.dao.impl.GroupsDaoImpl"/>
+    <bean id="membersDao" class="com.rackspace.cloud.api.dao.impl.MembersDaoImpl"/>    
+    <bean id="statusDao" class="com.rackspace.cloud.api.dao.impl.StatusDaoImpl"/>
+    <bean id="userDao" class="com.rackspace.cloud.api.dao.impl.UsersDaoImpl"/>    
+	
+	
+	<bean class="org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping" />
+	<bean class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter" >
+        <property name="messageConverters">
+            <list>
+                 <bean class="org.springframework.http.converter.json.MappingJacksonHttpMessageConverter"/>
+            </list>
+        </property>	
+	</bean>
+	 
+	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+	  	<property name="prefix" value="/jsp/"/>
+	  	<property name="suffix" value=".jsp"/>
+	</bean>
+
+	<!-- JDBC Data Source. It is assumed you have MySQL running on localhost 
+		port 3306 with username root and blank password. Change below if it's not 
+		the case -->
+    <!--  		
+	<bean id="mydatasource" class="org.apache.commons.dbcp.BasicDataSource"
+		destroy-method="close">
+		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
+		<property name="url" value="jdbc:mysql://docs-staging-content:3306/docs" />
+		<property name="username" value="anewuser" />
+		<property name="password" value="Fanatical7" />
+    	<property name="maxActive" value="20"/> 
+    	<property name="minIdle" value="10"/> 		
+		<property name="validationQuery" value="SELECT 1" />
+	</bean>
+    -->
+    
+	<!-- Hibernate Session Factory -->
+	<bean id="sessFactory"
+		class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
+		<property name="dataSource" ref="dataSource" />
+		<!--  
+		<property name="packagesToScan" value="com.rackspace.cloud.api.entity"/>
+		-->
+		<property name="annotatedClasses">
+		    <list>
+		        <value>com.rackspace.cloud.api.entity.Deployjob</value>
+		        <value>com.rackspace.cloud.api.entity.Freeze</value>
+		        <value>com.rackspace.cloud.api.entity.Groups</value>
+		        <value>com.rackspace.cloud.api.entity.Members</value>
+		        <value>com.rackspace.cloud.api.entity.MembersId</value>
+		        <value>com.rackspace.cloud.api.entity.Status</value>
+		        <value>com.rackspace.cloud.api.entity.Users</value>
+		    </list>
+		</property>
+
+		<property name="hibernateProperties">
+			<props>
+				<prop key="show_sql">true</prop>
+				<prop key="dialect">org.hibernate.dialect.MySQLDialect</prop>
+				<prop key="hibernate.connection.autocommit">true</prop>
+				<prop key="hbm2ddl.auto">none"</prop>
+			</props>		    
+		    <!--  
+			<value>
+				hibernate.dialect=org.hibernate.dialect.MySQLDialect
+			</value>
+			-->
+		</property>
+		<property name="configLocation" value="classpath:hibernate.cfg.xml" />
+	</bean>
+
+	<!-- Hibernate Transaction Manager -->
+	<bean id="transactionManager"
+		class="org.springframework.orm.hibernate4.HibernateTransactionManager">
+		<property name="sessionFactory" ref="sessFactory" />
+	</bean>
+		  
+    <tx:annotation-driven transaction-manager="transactionManager"/>
+    
+</beans>    
