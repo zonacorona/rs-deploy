@@ -4,8 +4,8 @@
 	     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.rackspace.cloud.api</groupId>
-	<artifactId>rax-autodeploy</artifactId>
-	<name>rax-autodeploy</name>
+	<artifactId>rs-deploy</artifactId>
+	<name>rs-deploy</name>
 	<packaging>war</packaging>
 	<version>1.0.0-SNAPSHOT</version>
 
@@ -229,7 +229,7 @@
 	</dependencies>
 
 	<build>
-		<finalName>rax-autodeploy</finalName>
+		<finalName>rs-deploy</finalName>
 		<resources>
 		    <resource>
 		        <directory>src/main/resources</directory>
